@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!--JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <script>
+        function burg(){
+            document.getElementById('burger').style.display='block';
+            document.getElementById('lavash').style.display='none';
+            document.getElementById('pitsa').style.display='none';
+            document.getElementById('salat').style.display='none';
+            document.getElementById('ichimlik').style.display='none';
+            document.getElementById('sous').style.display='none';
+
+        }
+        function lav(){
+            document.getElementById('burger').style.display='none';
+            document.getElementById('lavash').style.display='block';
+            document.getElementById('pitsa').style.display='none';
+            document.getElementById('salat').style.display='none';
+            document.getElementById('ichimlik').style.display='none';
+            document.getElementById('sous').style.display='none';
+        }
+        function pit(){
+            document.getElementById('burger').style.display='none';
+            document.getElementById('lavash').style.display='none';
+            document.getElementById('pitsa').style.display='block';
+            document.getElementById('salat').style.display='none';
+            document.getElementById('ichimlik').style.display='none';
+            document.getElementById('sous').style.display='none';
+        }
+        function sal(){
+            document.getElementById('burger').style.display='none';
+            document.getElementById('lavash').style.display='none';
+            document.getElementById('pitsa').style.display='none';
+            document.getElementById('salat').style.display='block';
+            document.getElementById('ichimlik').style.display='none';
+            document.getElementById('sous').style.display='none';
+        }
+        function ichmlk(){
+            document.getElementById('burger').style.display='none';
+            document.getElementById('lavash').style.display='none';
+            document.getElementById('pitsa').style.display='none';
+            document.getElementById('salat').style.display='none';
+            document.getElementById('ichimlik').style.display='block';
+            document.getElementById('sous').style.display='none';
+        }
+        function sou(){
+            document.getElementById('burger').style.display='none';
+            document.getElementById('lavash').style.display='none';
+            document.getElementById('pitsa').style.display='none';
+            document.getElementById('salat').style.display='none';
+            document.getElementById('ichimlik').style.display='none';
+            document.getElementById('sous').style.display='block';
+        }
+    </script>
+    <div class="container my-4">
+ <div class="row">
+     <div class="col-8">
+         <h3>Yangi buyurtma qo'shish</h3>
+         <nav>
+             <ul class="d-flex list-unstyled navbar-brand  navigation">
+             <li>
+                 <a href="#burger" onclick="burg()" class="ml-3">Burger</a>
+             </li> 
+             <li>
+                 <a href="#lavash" onclick="lav()" class="ml-5">Lavash</a>
+             </li> 
+             <li>
+                 <a href="#pitsa" onclick="pit() " class="ml-5">Pitsa</a>
+             </li> 
+             <li><a href="#salat" onclick="sal()" class="ml-5">Salatlar</a></li> 
+             <li>
+                 <a href="#ichimlik" onclick="ichmlk()" class="ml-5">Ichimliklar</a>
+             </li>
+             <li>
+                 <a href="#sous" onclick="sou()" class="ml-5">Sous</a>
+             </li>
+             </ul>
+         </nav>
+         <section class="burger" id="burger">
+             <div class="row" id="nm">
+                 <div class="col-6">
+     <img src="images/gamburg4.jpg " class="card-img-top" alt="">
+       <b id="nom">Gamburger</b><br>
+       <p class="narx"><span class="puli">15000</span> UZS</p>
+       <button class="btn btn-outline-primary qoshish" onclick="">+Qo'shish</button>
+                 </div>
+                 <div class="col-6">
+                    <img src="images/gamburg1.jpg " class="card-img-top" alt="">
+                      <b>Achchiq burger</b>
+                      <p class="narx"><span class="puli">13000</span> UZS</p>
+                      <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                                </div>
+                                <div class="col-6">
+                                    <img src="images/gamburg3.jpg" class="card-img-top" alt="">
+                                      <b>Bir qatlamli burger</b>
+                                      <p class="narx"><span class="puli">11000</span> UZS</p>
+                                      <button class=" btn btn-outline-primary qoshish">+Qo'shish</button>
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="images/gamburg.jpg " class="card-img-top" alt="">
+                                                      <b>Ikki qatlamli burger</b>
+                                                      <p class="narx"><span class="puli">10000</span> UZS</p>
+                                                      <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                                                                </div>
+                 
+                 
+             </div>
+         </section>
+         <section class="lavash" id="lavash">
+            <div class="row" id="nm">
+                <div class="col-6">
+    <img src="images/lav.jpg " class="card-img-top" alt="">
+      <b> Ko'katli Lavash</b><br>
+      <p class="narx"><span class="puli">15000</span> UZS</p>
+      <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                </div>
+                <div class="col-6">
+                   <img src="images/lav3.jpg " class="card-img-top" alt="">
+                     <b>Lavash</b>
+                     <p class="narx"><span class="puli">15000</span> UZS</p>
+                     <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                               </div>
+                               <div class="col-6">
+                                   <img src="images/lav2.jpg " class="card-img-top" alt="">
+                                     <b> Yaponski Lavash</b>
+                                     <p class="narx"><span class="puli">17000</span> UZS</p>
+                                     <button class=" btn btn-outline-primary qoshish">+Qo'shish</button>
+                                               </div>
+                                               <div class="col-6">
+                                                   <img src="images/lav1.jpg " class="card-img-top" alt="">
+                                                     <b> Katta Lavash</b>
+                                                     <p class="narx"><span class="puli">20000</span> UZS</p>
+                                                     <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                                                               </div>
+                
+                
+            </div>
+        </section>
+        <section class="pitsa" id="pitsa">
+            <div class="row" id="nm">
+                <div class="col-6">
+    <img src="images/pitsa1.jpg " class="card-img-top" alt="">
+      <b>Mevali Pitsa </b><br>
+      <p class="narx"><span class="puli">40000</span> UZS</p>
+      <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                </div>
+                <div class="col-6">
+                   <img src="images/pitsa2.jpg " class="card-img-top" alt="">
+                     <b>Marinali Lavash</b>
+                     <p class="narx"><span class="puli">45000</span> UZS</p>
+                     <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                               </div>
+                               <div class="col-6">
+                                   <img src="images/pitsa3.jpg " class="card-img-top" alt="">
+                                     <b>Karinkali Pitsa</b>
+                                     <p class="narx"><span class="puli">55000</span> UZS</p>
+                                     <button class=" btn btn-outline-primary qoshish">+Qo'shish</button>
+                                               </div>
+                                               <div class="col-6">
+                                                   <img src="images/pitsa4.jpg " class="card-img-top" alt="">
+                                                     <b>Pomidorli Lavash</b>
+                                                     <p class="narx"><span class="puli">62000</span> UZS</p>
+                                                     <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                                                               </div>
+                
+                
+            </div>
+        </section>
+        <section class="salat" id="salat">
+            <div class="row" id="nm">
+                <div class="col-6">
+    <img src="images/salat1.jpg " class="card-img-top" alt="">
+      <b>Qovurdoqli salat</b><br>
+      <p class="narx"><span class="puli">15000</span> UZS</p>
+      <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                </div>
+                <div class="col-6">
+                   <img src="images/salat4.jpg " class="card-img-top" alt="">
+                     <b>Mevali salat</b>
+                     <p class="narx"><span class="puli">10000</span> UZS</p>
+                     <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                               </div>
+                               <div class="col-6">
+                                   <img src="images/salat3.jpg " class="card-img-top" alt="">
+                                     <b>Sabzili salat</b>
+                                     <p class="narx"><span class="puli">12000</span> UZS</p>
+                                     <button class=" btn btn-outline-primary qoshish">+Qo'shish</button>
+                                               </div>
+                                               <div class="col-6">
+                                                   <img src="images/salat2.jpg " class="card-img-top" alt="">
+                                                     <b>Ko'katli salat</b>
+                                                     <p class="narx"><span class="puli">13000</span> UZS</p>
+                                                     <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                                                               </div>
+                
+                
+            </div>
+        </section>
+        <section class="ichimlik" id="ichimlik">
+            <div class="row" id="nm">
+                <div class="col-6">
+    <img src="images/cola.jpg " class="card-img-top" alt="">
+      <b>Cola</b><br>
+      <p class="narx"><span class="puli">4000</span> UZS</p>
+      <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                </div>
+                <div class="col-6">
+                   <img src="images/drink1.jpg " class="card-img-top" alt="">
+                     <b>Kokteyl</b>
+                     <p class="narx"><span class="puli">7000</span> UZS</p>
+                     <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                               </div>
+                               <div class="col-6">
+                                   <img src="images/fanta.jpg " class="card-img-top" alt="">
+                                     <b>Fanta </b>
+                                     <p class="narx"><span class="puli">12000</span> UZS</p>
+                                     <button class=" btn btn-outline-primary qoshish">+Qo'shish</button>
+                                               </div>
+                                               <div class="col-6">
+                                                   <img src="images/cola1.jpg " class="card-img-top" alt="">
+                                                     <b>Cola</b>
+                                                     <p class="narx"><span class="puli">5000</span> UZS</p>
+                                                     <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                                                               </div>
+                
+                
+            </div>
+        </section>
+        <section class="sous" id="sous">
+            <div class="row" id="nm">
+                <div class="col-6">
+    <img src="images/lav.jpg " class="card-img-top" alt="">
+      <b>Lavash</b><br>
+      <p class="narx"><span class="puli">12000</span> UZS</p>
+      <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                </div>
+                <div class="col-6">
+                   <img src="images/lav1.jpg " class="card-img-top" alt="">
+                     <b>Lavash</b>
+                     <p class="narx"><span class="puli">12000</span> UZS</p>
+                     <button class="btn btn-outline-primary qoshish">+Qo'shish</button>
+                               </div>
+                               <div class="col-6">
+                                   <img src="images/menu1.jpg " class="card-img-top" alt="">
+                                     <b>Lavash</b>
+                                     <p class="narx"><span class="puli">12000</span> UZS</p>
+                                     <button class=" btn btn-outline-primary qoshish">+Qo'shish</button>
+                                               </div>
+                                               <div class="col-6">
+                                                   <img src="images/burger1.jpg " class="card-img-top" alt="">
+                                                     <b>Lavash</b>
+                                                     <p class="narx"><span class="puli">12000</span> UZS</p>
+                                                     <button class="btn btn-outline-primary qoshish">+Qo'shish <script></script></button>
+                                                               </div>
+                
+                                                               
+            </div>
+        </section>
+     </div>
+ <!-- Hisob  qismi-->
+<div class="col-4">
+    <h6 style="text-align: center;">Buyurtmalar ruyxati</h6>
+    <div class="buyurtmalar">
+  <div class="hisob"></div>
+</div>
+  <div class="form">
+      <form action="">
+           Ismingiz: <br>
+            <input type="text"> <br>
+           Telefon raqam:
+           <br> <input type="number"><br>
+           Manzilingiz: <br>
+           <input type="text">
+
+
+      </form>
+     
+     
+</div> <button class="saqlash"> Saqlash</button>
+</div>
+
+
+ </div>
+    </div>
+</body>
+
+</html>
